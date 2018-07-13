@@ -1,0 +1,16 @@
+/* factorialize any random number-examp. if n=5 then n! = 5*4*3*2*1 */
+function factorialize(num) {
+ /* new var multiply is created to start as the lowest number in the factorial */
+ var multiply = 1;
+ 
+ /* new var result is created as the end answer to all the numbers multiplied together */
+  var result = 1;
+  
+ /* while loops are used when we do not know how many times the loop needs to be executed i.e. the input can be any number so we don't know how long it needs to run */
+  while(multiply <= num) {
+    result *= multiply++
+  }
+  return result;
+}
+
+factorialize(5);
