@@ -1,0 +1,13 @@
+/*from a subset of arrays that consist of 4 numbers, find the largest number */
+
+function largestOfFour(arr) {
+  /*the map function creates a new array by calling a function on every element of the array */
+  return arr.map(function(newNum) {
+/*the Math.max function simply pulls the largest number of the set */
+
+return Math.max.apply(null, newNum);
+  }
+  )
+}
+
+largestOfFour([[4, 5, 1, 3], [13, 27, 18, 26], [32, 35, 37, 39], [1000, 1001, 857, 1]]);
