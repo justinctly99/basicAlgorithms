@@ -1,0 +1,15 @@
+/* input a string and a substring, if it matches the end of the string it will return true */
+function confirmEnding(str, target) {
+  // "Never give up and good luck will find you."
+  // -- Falcor
+  /*str.substr designates that it is looking at the end part of the string. (-target.length) makes it so it starts at the end */
+  if(str.substr(-target.length)=== target) {
+    return true;
+  }
+  else {
+    return false;
+  }
+  
+}
+
+confirmEnding("Bastian", "n");
