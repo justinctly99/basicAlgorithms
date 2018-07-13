@@ -1,0 +1,17 @@
+/* find the longest word present in the string */
+
+function findLongestWordLength(str) {
+/* using the split function and ' ' insteead of '', it will split up each word of the sentence */
+  var newArray = str.split(' ');
+/* longestWord is the var we use to compare throughout the for loop so it is replaced by the longest string */  
+  var longestWord = 0;
+  for(var i=0; i < newArray.length; i++) {
+    if(longestWord < newArray[i].length){
+      longestWord = newArray[i].length;
+    }
+  }
+
+  return longestWord;
+}
+
+findLongestWordLength("A degree of parasitism will always exist in society");
