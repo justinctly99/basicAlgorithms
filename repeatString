@@ -1,0 +1,15 @@
+/*function that will have a given string and the num inputed will cause the string to be repeated that many times*/
+function repeatStringNumTimes(str, num) {
+  // repeat after me
+  /* blank string */
+  var repeatedString = "";
+  /* use a while loop so it will keep repeating the string until it reaches zero. */
+  while(num > 0) {
+    repeatedString += str;
+    /*this will cause the num to decrease by one with each run of the loop*/
+    num--;
+  }
+  return repeatedString;
+}
+
+repeatStringNumTimes("abc", 3);
