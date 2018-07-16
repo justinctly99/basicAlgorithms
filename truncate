@@ -1,0 +1,11 @@
+function truncateString(str, num) {
+ //run a if statement and only cut off the characters if str is longer than num
+  if(str.length > num) {
+  //in the slice function the first number tells it where to start and num is where it will cut off
+    return str.slice(0,num)+"...";
+  }
+  
+  return str;
+}
+
+truncateString("A-tisket a-tasket A green and yellow basket", 8);
