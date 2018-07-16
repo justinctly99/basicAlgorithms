@@ -1,0 +1,17 @@
+function findElement(arr, func) {
+  //create a new var called num
+  var num;
+  //run a for loop through length of array
+  for(var i=0; i<arr.length; i++) {
+  //when an element of the arr satsifies the function
+    if(func(arr[i])){
+  //var num is now equal to that element of the array
+      num = arr[i];
+   //return this num
+      return num;
+    }
+  }
+  return num;
+}
+
+findElement([1, 2, 3, 4], num => num % 2 === 0);
